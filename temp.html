@@ -60,5 +60,93 @@
       alert(lockText);
       console.log(lockText);
     </script> -->
+    <!-- <script type="text/javascript">
+      var arr = [2,3,7,13,5,0,20];
+      var min, max;
+      for(var i=0; i<arr.length; i++){
+        if(arr[i] < min) min = arr[i];
+        if(arr[i] > max) max = arr[i];
+      }
+      var sum = 0;
+      for(var i=0, l = arr.length; i<1; i++){
+        sum += arr[i];
+        console.log(sum);
+      }
+      alert("Average =" + (sum/arr.length) + "min = " + min + "max = " + max);
+    </script> -->
+    <!-- <script type="text/javascript">
+      var str = prompt("Введите текст")
+      var path = prompt("Введите кусок текста")
+
+      var pattern = "";
+      var pathPattern;
+
+      for(var i = 0; i < path.length ; i++){
+        pathPattern = "";
+        for(var j = 0; j < path.length ; j++){
+          if(i === j){
+            pathPattern += ".";
+          } else {
+            pathPattern += path[j];
+          }
+        }
+
+        if(i !== path.length - 1){
+          pathPattern += "|";
+        }
+        pattern += pathPattern;
+      }
+      var regExp = new RegExp(pattern, "i");
+
+      if(regExp.test(str)){
+        alert("Совпадение найдено: " + str.match(regExp));
+      } else {
+        alert("Совпадение не найдено!");
+      }
+     </script> -->
+
+     <!-- <script type="text/javascript">
+       var arr = [];
+
+       console.time("1M push & pop");
+
+       for(var i=0; i<1000000; i++){
+         arr.push(i);
+       }
+
+       for(var i=0; i<1000000; i++){
+         arr.pop();
+       }
+
+       console.timeEnd("1M push & pop");
+
+       console.time("1M push & pop");
+
+       for(var i=0; i<100000; i++){
+         arr.shift(i);
+       }
+
+       for(var i=0; i<100000; i++){
+         arr.unshift(i);
+       }
+
+       console.timeEnd("1M push & pop");
+
+     </script> -->
+     <script type="text/javascript">
+       var arr = [5,3,4,1,2,6,7,9,8];
+       var buf;
+       for (var i = 0; i < arr.length; i++) {
+         buf = arr[i];
+         for (var j = 0; j < arr.length - i; j++) {
+           if (arr[j-1] > arr[j]) {
+             var temp = arr[j-1];
+             arr[j-1] = arr[j];
+             arr[j] = temp;
+           }
+         }
+       }
+       console.log(arr);
+     </script>
   </body>
 </html>
