@@ -1,5 +1,5 @@
 body {
-  font-family: "Source Sans Pro";
+  font-family: "Roboto";
 }
 h1,
 h2,
@@ -7,18 +7,63 @@ h3 {
   color: #000;
 }
 h1 {
+  padding-top: 50px;
+  text-align: center;
   font-size: 2em;
   border-bottom: 2px solid #fff;
   padding-bottom: 30px;
 }
 h2 {
+  padding-top: 30px;
+  text-align: center;
   font-size: 1.5em;
   border-bottom: 2px solid #fff;
   padding-bottom: 10px;
 }
 h3 {
-  font-size: 0.7em;
-  font-weight: 600;
-  letter-spacing: 0.25em;
+  padding-bottom: 10px;
+  text-align: center;
+  color: rgba(0,0,0,0.33);
+  font-size: 1em;
+  font-weight: 900;
   text-transform: uppercase;
+}
+section {
+  text-align: center;
+}
+article {
+  margin: 50px auto;
+  padding: 50px;
+  width: 50vw;
+  border-radius: 8px;
+  box-shadow: 0 7px 20px 0 rgba(0,0,0,0.15);
+}
+p {
+  font-size: 0.9em;
+  color: #333;
+}
+input {
+  text-align: center;
+  border-radius: 4px;
+  border: solid 1px transparent;
+  margin: 0 10px 10px 0;
+  padding: 5px;
+  background-color: #f5f5f5;
+  width: 100px;
+}
+input:hover {
+  background-color: #e4ecf5;
+  border: solid 1px #b5d7ff;
+}
+button {
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  background-color: #4a90e2;
+  margin: 0 10px 10px 0;
+  padding: 5px 20px;
+}
+button:hover {
+  background-color: #68a8f2;
 }

@@ -1,6 +1,6 @@
 $main-color = #2a2f4a
 $hover-color = #9bf1ff
-$main-font = "Source Sans Pro"
+$main-font = "Roboto"
 $font-color = #000
 
 body
@@ -10,17 +10,60 @@ h1, h2, h3
   color $font-color
 
 h1
+  padding-top 50px
+  text-align center
   font-size 2em
   border-bottom 2px solid white
   padding-bottom 30px
 
 h2
+  padding-top 30px
+  text-align center
   font-size 1.5em
   border-bottom 2px solid white
   padding-bottom 10px
 
 h3
-  font-size 0.7em
-  font-weight 600
-  letter-spacing 0.25em
+  padding-bottom 10px
+  text-align center
+  color rgba(0,0,0,0.33)
+  font-size 1em
+  font-weight 900
   text-transform uppercase
+
+section
+  text-align center
+
+article
+  margin 50px auto
+  padding 50px
+  width 50vw
+  border-radius 8px
+  box-shadow: 0 7px 20px 0 rgba(0,0,0,0.15);
+
+p
+  font-size 0.9em
+  color #333
+
+input
+  text-align center
+  border-radius 4px
+  border solid 1px transparent
+  margin 0 10px 10px 0
+  padding 5px
+  background-color #F5F5F5
+  width 100px
+  &:hover
+    background-color #E4ECF5
+    border solid 1px #B5D7FF
+
+button
+  cursor pointer
+  color white
+  border none
+  border-radius 4px
+  background-color #4A90E2
+  margin 0 10px 10px 0
+  padding 5px 20px
+  &:hover
+    background-color #68A8F2

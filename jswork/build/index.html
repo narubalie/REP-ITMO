@@ -5,23 +5,23 @@
     <title>Forty</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <h1>Решение задач по курсу Javascript</h1>
     <section>
       <h2>Занятие №1</h2>
-      <article class="task1">
+      <article class="task">
         <h3>Задача 1</h3>
         <p>Из трех данных чисел выбрать наименьшее.</p>
         <p>Решение:</p>
         <input id="a" placeholder="12" type="text"><br>
         <input id="b" placeholder="15" type="text"><br>
         <input id="c" placeholder="13" type="text"><br>
-        <button id="maxValue" type="button" name="button">max value</button>
+        <button id="maxValue" type="button" name="button">max value</button><br>
         <button id="minValue" type="button" name="button">min value</button>
       </article>
-      <article class="task2">
+      <article class="task">
         <h3>Задача 2</h3>
         <p>Дано целое число, лежащее в диапазоне от -999 до 999.
           Вывести строку - словесное описание данного числа вида
@@ -31,12 +31,202 @@
         <input id="bigNum" type="text" placeholder="-999 to 999" name="" value="">
         <button id="wtf" type="button" name="button">What?</button>
       </article>
-      <article class="task3">
+      <article class="task">
         <h3>Задача 3</h3>
         <p>Дано целое число в диапазоне
           0 - 9. Вывести строку - название соответствующей цифры
           на русском языке
           (0 - "ноль", 1 - "один", 2 - "два", ...).</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">Say it</button>
+      </article>
+      <article class="task">
+        <h3>Задача 4</h3>
+        <p>Дано целое число в диапазоне 1 - 5. Вывести строку - словесное описание соответствующей оценки <br>
+          (1 - "плохо", <br>
+          2 - "неудовлетворительно", <br>
+          3 - "удовлетворительно",<br>
+          4 - "хорошо",<br>
+          5 - "отлично").</p>
+        <p>Решение:</p>
+        <input id="numScore" type="text" placeholder="1-5">
+        <button id="textScore" type="button" name="button">Score</button>
+      </article>
+      <article class="task">
+        <h3>Задача 5</h3>
+        <p>Проверить истинность высказывания:<br>
+          "Среди трех данных целых чисел есть хоть бы одна пара совпадающих".<br>
+          Требуется вывести логическое значение True, если<br>
+          приведенное высказывание для предложенных исходных<br>
+          данных является истинным, и значение False в противном случае.</p>
+        <p>Решение:</p>
+        <input id="pair1" type="text" placeholder="number">
+        <input id="pair2" type="text" placeholder="number">
+        <input id="pair3" type="text" placeholder="number">
+        <button id="whatPair" type="button" name="button">Pair?</button>
+      </article>
+    </section>
+    <section>
+      <h2>Занятие №2</h2>
+      <article class="task3">
+        <h3>Задача 1</h3>
+        <p>Перераспределить значения переменных X и Y так, <br>
+          чтобы в X оказалось меньшее из этих значений,<br>
+          а в Y — большее.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 2</h3>
+        <p>Есть три вершины. Координаты X, Y, Z заданы как целые числа.
+          Нужно определить - является ли треугольник с заданными
+          координатами прямоугольным.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 3</h3>
+        <p>Дан номер месяца (1 — январь, 2 — февраль, ...).
+          Вывести название соответствующего времени года
+          ("зима", "весна" и т.д.).</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 4</h3>
+        <p>Единицы длины пронумерованы следующим образом:<br>
+          1 — дециметр, <br>
+          2 — километр,<br>
+          3 — метр, <br>
+          4 — миллиметр,<br>
+          5 — сантиметр. <br>
+          Дан номер единицы длины и длина отрезка L в этих единицах (вещественное число). <br>
+          Вывести длину данного отрезка в метрах.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+    </section>
+    <section>
+      <h2>Занятие №3</h2>
+      <article class="task3">
+        <h3>Задача 1</h3>
+        <p>Вывести используя (document.write) таблицу
+          умножения чисел до 10.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 2</h3>
+        <p>Дана строка, изображающая целое число. Вывести сумму цифр этого числа.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 3</h3>
+        <p>Дана строка S и символ C. Удвоить каждое вхождение символа C в строку S.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 4</h3>
+        <p>Проверить что введенный пароль удовлетворяет следующим условиям сложности:<br>
+          - длинна от 9 символов;<br>
+          - содержит обязательно английские буквы верхнего и нижнего регистра;<br>
+          - содержит более двух цифр;<br>
+          - содержит обязательно один из неалфавитных символов (например, !, $, #, %).</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+    </section>
+    <section>
+      <h2>Занятие №4</h2>
+      <article class="task3">
+        <h3>Задача 1</h3>
+        <p>Заданы два массива<br>
+          A = [ 12, 4, 3, 10, 1, 20 ] <br>
+          B = [-3, -7, -100, -33]<br>
+          необходимо их объединить в один массив C добавив массив B в конец(в начало) A.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 1</h3>
+        <p>Одномерным массивом задана доска 3 на 3<br>
+          var area = [ null, null, null, null, null, null, null, null, null ]<br>
+          Необходимо сформировать игровое поле состоящее из квадратов для крестиков-ноликов в HTML.<br>
+          При появлении в массиве 0-ля рисовать нолик , 1-цы крестик<br>
+          Пример: [ 1, null, 0, null, 1, null, null, null, null ] на поле 2-а крестика, и 1-н нолик.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 1</h3>
+        <p>Задан массив - [12,4,3,10,1,20]. <br>
+          Удалить из него наименьшее и наибольшее значение.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 1</h3>
+        <p>Задача повышенной сложности.<br>
+          Задан массив - [12,4,3,10,1,20]<br>
+          необходимо отсортировать его в порядке возрастания,<br>
+          при этом не использовать готовый метод sort и методы разобранные на занятии.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+    </section>
+    <section>
+      <h2>Занятие №5</h2>
+      <article class="task3">
+        <h3>Задача 1</h3>
+        <p>Построить объект студент со свойствами:<br>
+          Имя, Фамилия, Возраст, Интересы (в виде массива), Место обучения.<br>
+          Написать отдельную функцию, которой передается объект студент, а она выводит его содержимое.</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 1</h3>
+        <p>Заданы два массива A и B необходимо их объединить<br>
+          в один массив C так, чтобы в массиве остались уникальные<br>
+          (неповторяющиеся) элементы.<br>
+          Например: A = [1,2], B = [2,3] получим С = [1, 2, 3].</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 1</h3>
+        <p>Написать отдельную функцию, которая выводит пользователю<br>
+          заданное число чисел Фибоначчи.<br>
+          (например, первых 8 чисел Фибоначчи: 1, 1, 2, 3, 5, 8, 13, 21). <br>
+          Заданное число передается функции в качестве аргумента.<br>
+          Про числа Фибоначчи: https://ru.wikipedia.org/wiki/Числа_Фибоначчи</p>
+        <p>Решение:</p>
+        <input id="whatNum" type="text" placeholder="0-9">
+        <button id="whatNumText" type="button" name="button">What?</button>
+      </article>
+      <article class="task3">
+        <h3>Задача 1</h3>
+        <p>Напишите функцию, которая в зависимости от переданных<br>
+          в нее целочисленных аргументов "количество дней", будет выводить<br>
+          слово "день" в нужно форме ("если передали - 1, то 1 день",<br>
+          "если передали - 3, то 3 дня" и т.д).</p>
         <p>Решение:</p>
         <input id="whatNum" type="text" placeholder="0-9">
         <button id="whatNumText" type="button" name="button">What?</button>
