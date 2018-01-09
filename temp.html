@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>111</title>
+    <script src="temp.js"></script>
   </head>
   <body>
     <!-- Регулярные выражения -->
@@ -148,7 +149,7 @@
        }
        console.log(arr);
      </script> -->
-  <script>
+  <!-- <script>
     var a, b, c;
     var  a = parseInt(prompt("введите число"));
     var  b = parseInt(prompt("введите число"));
@@ -162,6 +163,132 @@
     else {
       alert("наименьшее число " + c)
     }
+  </script> -->
+  <!-- <script type="text/javascript">
+    var obj = {
+      age:18,
+      name: 'Sasha',
+      isMale: true
+    }
+
+    function clone(o) {
+      var newO = {};
+      for (var prop in o) {
+        newO[prop] = o[prop];
+      }
+      return newO;
+    }
+
+    var obj2 = clone(obj);
+    obj2.age = 20;
+    console.dir(obj);
+    console.dir(obj2);
+  </script> -->
+  <!-- <script type="text/javascript">
+    function pow(x, n) {
+      if (n === 0) {
+        return 1;
+      } else if (n === 1) {
+        return x;
+      } else {
+        return x*pow(x,n-1);
+      }
+    }
+
+    console.log(pow(2,3));
+
+  </script> -->
+  <!-- <script type="text/javascript">
+    function pow(x, n) {
+      if (n === 0) {
+        return 1;
+      } else if (n === 1) {
+        return x;
+      } else {
+        var res = x;
+        for (var i = 2; i <= n; i++) {
+          res*=x;
+        }
+        return res;
+      }
+    }
+
+    console.log(pow(2,3));
+
+  </script> -->
+  <!-- <script type="text/javascript">
+    function createrCounterov() {
+      var count=0;
+      return function(){
+        return ++count;
+      }
+    }
+    var generator = createrCounterov();
+    console.log(generator());
+    console.log(generator());
+    console.log(generator());
+    console.log(generator());
+    var generator2 = createrCounterov();
+    console.log(generator2());
+    console.log(generator2());
+    console.log(generator2());
+    console.log(generator2());
+
+    console.dir(generator);
+    console.dir(generator2);
+  </script> -->
+  <!-- <script type="text/javascript">
+    var cat = {
+      name: "Barsik",
+      age: 3,
+      keyword: "Mew!"
+    };
+
+    var dog = {
+      name: "Balbes",
+      age: 3,
+      keyword: "Gaw!"
+    };
+
+    function logHello(){
+      console.log(this.keyword + " My name is " + this.name);
+    }
+
+    cat.hello = logHello;
+    dog.hello = logHello;
+
+    cat.hello();
+    dog.hello();
+  </script> -->
+  <!-- <script type="text/javascript">
+    var arr = [0,2,4];
+    myFirstLib.remove(arr,1);
+    console.log(arr);
+  </script> -->
+  <script type="text/javascript" src="plotly-latest.min.js"></script>
+    <div id="placeholder" style="width: 480px; height: 400px;"></div>
+    <script type="text/javascript">
+      function f(x) {
+        if (x<0) {
+          return 2*x+1;
+        } else if (0<=x && x<2) {
+          return -1.5*x + 1;
+        } else {
+          return x-4;
+        }
+      }
+
+      var line1 = {
+        x:[],
+        y:[],
+        type:'scatter'
+        };
+      for (var i = -500; i<500; i++) {
+        line1.x.push(i/100);
+        line1.y.push(f(i/100));
+      }
+      var data = [line1];
+      Plotly.newPlot('placeholder', data);
   </script>
   </body>
 </html>
